@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golden City Real Estates</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light navbar sticky-top navbar-dark bg-danger">
+    <div class="container">
+        <a class="navbar-brand" href="/" style="color: gold; font-size: 45px;">SR Infra</a>
+
+        <div align="right">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" align="right" style="font-size:20px;">
+                    <a class="nav-item nav-link" href="/login/" style="color: black;">LogIn</a>
+                    <a class="nav-item nav-link " href="/reg/" style="color: black;">Register</a>
+                    <a class="nav-item nav-link " href="/contact/" style="color: black;">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--<h1><a href="/mbnr/">Mahabubnagar</a>-->
+<!--<a>Wanaparthy</a>-->
+<!--<a>Yadhagiri gutta </a>-->
+<!--<a>Divity palli, Jadcharla</a>-->
+<!--</h1>-->
+
+    {% for image in img %}
+    <img style="width:1500px;" src="{{image.thumbnails.url}}">
+    {% endfor %}
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>
